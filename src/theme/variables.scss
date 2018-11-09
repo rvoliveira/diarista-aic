@@ -33,15 +33,31 @@ $app-direction: ltr;
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
 
+
 $colors: (
-  primary:    #488aff,
+  primary:     #b30086,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
+  lilas-escuro:     #b30086,
+  lilas-claro:      #f535c5,
+  lilas-bemclaro: #f58cdb,
   dark:       #222
 );
 
+$app-background: linear-gradient(to bottom, color($colors, lilas-escuro) 0%, color($colors, lilas-bemclaro) 100%);
+$background-color: transparent;
+$toolbar-background: transparent;
 
+#diarista-aic{
+  background: $app-background;
+}
+
+.navbarlogo {
+  height: 35px;
+  float: left;
+  margin-left: 10px;
+}
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here

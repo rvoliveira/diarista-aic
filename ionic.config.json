@@ -1,6 +1,8 @@
 {
   "name": "diarista-aic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular",
   "pro_id": "9d8ab3a1"
 }
