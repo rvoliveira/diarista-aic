@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 
+import { AutenticarPage } from '../autenticar/autenticar';
+
+@IonicPage({
+  name: 'home-page'
+})
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -22,6 +27,11 @@ export class HomePage {
     ];
   }
   openPage(page: any) {
-    this.navCtrl.push(page.component);  
+    if(page.component) 
+      this.navCtrl.push(page.component);
+    else
+      this.navCtrl.setRoot(AutenticarPage);
+
+    
   }
 }
