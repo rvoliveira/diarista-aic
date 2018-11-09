@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFireAuth } from '@angular/fire/auth';
+import { Geolocation } from '@ionic-native/geolocation';
 
 import { MyApp } from './app.component';
 //import { HomePage } from '../pages/home/home';
@@ -36,6 +37,7 @@ import { RegistrarPage } from '../pages/registrar/registrar';
     StatusBar,
     SplashScreen,
     AngularFireAuth,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
